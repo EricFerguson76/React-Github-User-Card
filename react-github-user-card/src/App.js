@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import axios from 'axios';
 import UserCard from './components/UserCard';
+import FollowersCard from './FollowersCard';
 
 class App extends React.Component {
   state = {
@@ -31,7 +32,7 @@ class App extends React.Component {
     <div className="App">
       <h1>GitHub User Cards</h1>
       <UserCard user ={this.state.user} />
-      
+      <FollowersCard followers ={this.state.followers} />
     </div>
   );
   }
